@@ -8,6 +8,7 @@ function App() {
   let [글제목2, set글제목2] = useState('강남 우동맛집');
   let [글제목3, set글제목3] = useState('파이썬독학');
   let [logo , setLogo] = useState('ReactBlog');
+  let [like , setLike] = useState(0);
 
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
         <h4>{logo}</h4>
       </div>
       <div className="list">
-        <h4>{글제목1}</h4>
+        <h4>{글제목1} <span onClick={()=>{ setLike(like++)}}>a</span>{like}</h4>
         <p>2월 17일 발행</p>
       </div>
       <div className="list">
