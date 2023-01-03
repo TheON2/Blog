@@ -16,7 +16,7 @@ function App() {
         <h4>{logo}</h4>
       </div>
       <div className="list">
-        <h4>{글제목1} <span onClick={()=>{ setLike(like++)}}>a</span>{like}</h4>
+        <h4>{글제목1} <span onClick={()=>{ setLike(like++)}}>a</span>{like} <span onClick={()=>{set글제목1('여자코트 추천')}}>제목바꾸기</span></h4>
         <p>2월 17일 발행</p>
       </div>
       <div className="list">
